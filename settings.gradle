@@ -1,0 +1,6 @@
+pluginManagement {
+    repositories {
+        mavenLocal()
+    }
+}
+rootProject.name = 'spring-framework-30489'

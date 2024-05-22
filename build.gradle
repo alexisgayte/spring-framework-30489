@@ -1,0 +1,21 @@
+plugins {
+    id 'org.springframework.boot' version '3.2.5'
+    id 'java'
+}
+
+repositories {
+    mavenLocal()
+}
+
+dependencies {
+    implementation platform("org.springframework.boot:spring-boot-dependencies:3.2.5")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-security")
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.springframework.security:spring-security-test")
+}
+
+test {
+    useJUnitPlatform()
+}
